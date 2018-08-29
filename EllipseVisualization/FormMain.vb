@@ -113,7 +113,7 @@
         Dim p2 As PointF
         Dim cp As PointF
         Using p As New Pen(Color.FromArgb(128, Color.Gray))
-            For a As Single = 0 To Math.PI * 2 Step 0.05
+            For a As Single = 0 To Math.PI * 2 Step Math.PI / 60
                 p2.X = w / 2 * Math.Cos(a)
                 p2.Y = -h / 2 * Math.Sin(a)
                 g.DrawLine(p, ep, p2)
