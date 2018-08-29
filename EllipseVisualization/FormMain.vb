@@ -115,7 +115,7 @@
         Using p As New Pen(Color.FromArgb(128, Color.Gray))
             For a As Single = 0 To Math.PI * 2 Step 0.05
                 p2.X = w / 2 * Math.Cos(a)
-                p2.Y = h / 2 * Math.Sin(a)
+                p2.Y = -h / 2 * Math.Sin(a)
                 g.DrawLine(p, ep, p2)
 
                 cp = GetCenter(ep, p2)
